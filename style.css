@@ -18,32 +18,51 @@
   width: 0;
   height: 0;
   border-bottom: 50px solid transparent;
-  border-left: 50px solid white;
+  border-left: 50px solid #cdffcb;
   border-top: 50px solid transparent;
   transform-origin: right;
-  animation: animat 4s ease-out infinite;
+  animation: rotateOne 4s linear infinite;
 }
 
 .triangleTwo {
   width: 0;
   height: 0;
   border-bottom: 50px solid transparent;
-  border-right: 50px solid white;
+  border-right: 50px solid #cdffcb;
   border-top: 50px solid transparent;
   transform-origin: left;
-  animation: animat 4s ease-out 0.7s infinite;
+  transform: rotate(90deg);
+  animation: rotateTwo 4s linear 1s infinite;
 }
 
-@keyframes animat {
-  0% {
+@keyframes rotateOne {
+  0%,
+  25% {
     transform: rotate(0deg);
   }
 
-  50% {
+  50%,
+  75% {
     transform: rotate(180deg);
   }
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateTwo {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
   }
 }
