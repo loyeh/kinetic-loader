@@ -17,9 +17,9 @@
 .triangleOne {
   width: 0;
   height: 0;
-  border-bottom: 50px solid transparent;
-  border-left: 50px solid #cdffcb;
-  border-top: 50px solid transparent;
+  border-bottom: 15vmin solid transparent;
+  border-left: 15vmin solid #cdffcb;
+  border-top: 15vmin solid transparent;
   transform-origin: right;
   animation: rotateOne 4s linear infinite;
 }
@@ -27,9 +27,9 @@
 .triangleTwo {
   width: 0;
   height: 0;
-  border-bottom: 50px solid transparent;
-  border-right: 50px solid #cdffcb;
-  border-top: 50px solid transparent;
+  border-bottom: 15vmin solid transparent;
+  border-right: 15vmin solid #cdffcb;
+  border-top: 15vmin solid transparent;
   transform-origin: left;
   transform: rotate(90deg);
   animation: rotateTwo 4s linear 1s infinite;
